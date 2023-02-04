@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "763011150929",
+    "project_id": "sinchdemo-d9634",
+    "storage_bucket": "sinchdemo-d9634.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763011150929:android:81b642efd9cc41ed1bb470",
+        "android_client_info": {
+          "package_name": "com.example.sinchdemofirst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763011150929-ftnkiivehboeck4npntn1oh98tub7kll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRLBzY6VlPYq-wLm7CbIol2X4c_7-c28E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763011150929-ftnkiivehboeck4npntn1oh98tub7kll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

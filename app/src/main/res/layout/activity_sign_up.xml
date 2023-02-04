@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:hint="Enter Name"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_white_rounded_corner"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/etEmail"
+        app:layout_constraintEnd_toStartOf="@id/gl_v2"
+        app:layout_constraintStart_toEndOf="@id/gl_v1"
+        app:layout_constraintTop_toBottomOf="@id/gl_h1"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:hint="Enter Email"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_white_rounded_corner"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/etPassword"
+        app:layout_constraintEnd_toStartOf="@id/gl_v2"
+        app:layout_constraintStart_toEndOf="@id/gl_v1"
+        app:layout_constraintTop_toBottomOf="@id/etName"
+    />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:hint="Enter Password"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_white_rounded_corner"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/gl_h2"
+        app:layout_constraintEnd_toStartOf="@id/gl_v2"
+        app:layout_constraintStart_toEndOf="@id/gl_v1"
+        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#2196F3"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintStart_toEndOf="@id/gl_v1"
+        app:layout_constraintEnd_toStartOf="@id/gl_v2"
+        app:layout_constraintBottom_toTopOf="@id/btnSignUp"
+        android:textFontWeight="700"
+        android:textSize="22sp"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/gl_h2"
+        app:layout_constraintEnd_toStartOf="@id/gl_v2"
+        app:layout_constraintStart_toEndOf="@id/gl_v1" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gl_h1"
+        app:layout_constraintStart_toEndOf="@id/gl_v1"
+        app:layout_constraintEnd_toStartOf="@id/gl_v2"
+        app:layout_constraintBottom_toTopOf="@id/gl_h2"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_h1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_h2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_v1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_v2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".98" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,6 +35,8 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+
 }
 
 dependencies {
@@ -51,7 +53,11 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-database-ktx'
-}
 
+    //Sinch dependency
+    implementation fileTree(dir: "libs", include: ["*.aar"])
+
+
+}
 
 

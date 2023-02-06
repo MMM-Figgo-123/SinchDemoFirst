@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                     }else{
                         binding.progressBar.visibility = View.GONE
 
-                        Toast.makeText(this,"Login Failed",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this,"${it.exception?.localizedMessage.toString()}",Toast.LENGTH_SHORT).show()
 
                     }
                 }

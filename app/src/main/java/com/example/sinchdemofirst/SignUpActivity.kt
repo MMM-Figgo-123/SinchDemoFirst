@@ -3,6 +3,7 @@ package com.example.sinchdemofirst
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.example.sinchdemofirst.databinding.ActivitySignUpBinding
@@ -77,7 +78,8 @@ class SignUpActivity : AppCompatActivity() {
                     }else{
                         binding.progressBar.visibility = View.GONE
 
-                        Toast.makeText(this,"Signup Failed",Toast.LENGTH_SHORT).show()
+
+                        Toast.makeText(this,"${it.exception?.localizedMessage.toString()}",Toast.LENGTH_SHORT).show()
 
                     }
                 }
